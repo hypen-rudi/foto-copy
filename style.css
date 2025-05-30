@@ -1,0 +1,188 @@
+/* style.css 2025 - Modern & Fresh Design */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #222;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  position: relative;
+  background: url('221129U4py8zfOMYXTs1tkg5rxwEJ036FdoDnLlRjcHB29eAGNivVSIhCaPbKmZWu7.jpg') no-repeat center/cover;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.main-header .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.main-header:hover .overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 90px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+  transition: transform 0.4s ease;
+}
+
+.logo:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+main {
+  padding: 40px 25px;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+h2 {
+  color: #007BFF;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  border-left: 6px solid #007BFF;
+  padding-left: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 12px 8px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.whatsapp {
+  background: #25D366;
+  box-shadow: 0 4px 14px #25D366a0;
+}
+
+.instagram {
+  background: #E4405F;
+  box-shadow: 0 4px 14px #E4405Fa0;
+}
+
+.tiktok {
+  background: #010101;
+  box-shadow: 0 4px 14px #000000a0;
+}
+
+.facebook {
+  background: #3b5998;
+  box-shadow: 0 4px 14px #3b5998a0;
+}
+
+footer {
+  background: linear-gradient(90deg, #002244, #004080);
+  color: #eee;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 3px 10px rgba(255,255,255,0.1);
+  user-select: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    padding: 50px 15px;
+    clip-path: none;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+}
